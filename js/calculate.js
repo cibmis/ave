@@ -1,8 +1,8 @@
 $(function () {
 
-  var $balance = $('#balance') || 0;
-  var $funds = $('funds') || 0;
-  var $atm = $('atm') || 0;
+  // var $balance = $('#balance');
+  // var $funds = $('funds');
+  // var $atm = $('atm');
   var $calculate = $('#calculate');
 
   $('#balance-slide').slider({
@@ -11,7 +11,7 @@ $(function () {
     step: 25,
     value: 0,
     slide: function(event, ui) {
-      $('#balance').val('$' + ui.value);
+      $('#balance').val(ui.value);
     }
   });
 
@@ -21,7 +21,7 @@ $(function () {
     step: 25,
     value: 0,
     slide: function(event, ui) {
-      $('#funds').val('$' + ui.value);
+      $('#funds').val(ui.value);
     }
   });
 
@@ -37,11 +37,11 @@ $(function () {
 
   $calculate.on('submit', function (e) {
     e.preventDefault();
-    // var balance = parseFloat(document.getElementById('balance').value) || 0;
-    // var funds = parseFloat(document.getElementById('funds').value) || 0;
-    // var atm = parseFloat(document.getElementById('atm').value) || 0;
-    var atmfees = Math.min($atm*3, 12);
-    var money = $balance + $funds;
+    var newbalance = parseFloat(document.getElementById('balance').value) || 0;
+    var newfunds = parseFloat(document.getElementById('funds').value) || 0;
+    var newatm = parseFloat(document.getElementById('atm').value) || 0;
+    var atmfees = Math.min(newatm*3, 12);
+    var money = newbalance + newfunds;
     if (money < 10000) {
       var total = (money * 0.0149) + atmfees;
       document.acceleration.total.value = total;
