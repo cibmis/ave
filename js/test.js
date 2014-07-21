@@ -2,7 +2,8 @@ $(function () {
 
   var $calculate = $('#calculate');
 
-  $calculate.on('submit', function () {
+  $calculate.on('submit', function (e) {
+    e.preventDefault();
     var balance = parseFloat(document.getElementById('balance').value);
     var funds = parseFloat(document.getElementById('funds').value);
     var atm = parseFloat(document.getElementById('atm').value);
