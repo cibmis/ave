@@ -4,9 +4,9 @@ $(function () {
 
   $calculate.on('submit', function (e) {
     e.preventDefault();
-    var balance = parseFloat(document.getElementById('balance').value);
-    var funds = parseFloat(document.getElementById('funds').value);
-    var atm = parseFloat(document.getElementById('atm').value);
+    var balance = parseFloat(document.getElementById('balance').value) || 0;
+    var funds = parseFloat(document.getElementById('funds').value) || 0;
+    var atm = parseFloat(document.getElementById('atm').value) || 0;
     var atmfees = Math.min(atm*3, 12);
     var money = balance + funds;
     if (money < 10000) {
