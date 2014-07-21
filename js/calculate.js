@@ -1,8 +1,8 @@
 $(function () {
 
-  var $balance = $('#balance');
-  var $funds = $('funds');
-  var $atm = $('atm');
+  var $balance = $('#balance') || 0;
+  var $funds = $('funds') || 0;
+  var $atm = $('atm') || 0;
   var $calculate = $('#calculate');
 
   $('#balance-slide').slider({
@@ -31,7 +31,7 @@ $(function () {
     step: 1,
     value: 0,
     slide: function(event, ui) {
-      $('#atm').val('$' + ui.value);
+      $('#atm').val(ui.value);
     }
   });
 
