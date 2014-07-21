@@ -11,7 +11,7 @@ $(function () {
     max: 25000,
     value: 0,
     slide: function(event, ui) {
-      $balance.val('$' + ui.value);
+      $balance.val('$' + ui.value());
     }
   });
 
@@ -21,7 +21,7 @@ $(function () {
     max: 25000,
     value: 0,
     slide: function(event, ui) {
-      $funds.val('$' + ui.value);
+      $funds.val('$' + ui.value());
     }
   });
 
@@ -31,7 +31,7 @@ $(function () {
     max: 25,
     value: 0,
     slide: function(event, ui) {
-      $atm.val('$' + ui.value);
+      $atm.val('$' + ui.value());
     }
   });
 
