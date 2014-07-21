@@ -6,32 +6,32 @@ $(function () {
   var $calculate = $('#calculate');
 
   $('#balance-slide').slider({
-    range: false,
     min: 0,
     max: 25000,
+    step: 25,
     value: 0,
     slide: function(event, ui) {
-      $balance.val('$' + ui.value());
+      $('#balance').val('$' + ui.value);
     }
   });
 
   $('#funds-slide').slider({
-    range: false,
     min: 0,
     max: 25000,
+    step: 25,
     value: 0,
     slide: function(event, ui) {
-      $funds.val('$' + ui.value());
+      $('#funds').val('$' + ui.value);
     }
   });
 
   $('#atm-slide').slider({
-    range: false,
     min: 0,
     max: 25,
+    step: 1,
     value: 0,
     slide: function(event, ui) {
-      $atm.val('$' + ui.value());
+      $('#atm').val('$' + ui.value);
     }
   });
 
