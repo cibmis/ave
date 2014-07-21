@@ -40,7 +40,7 @@ $(function () {
     var newbalance = parseFloat(document.getElementById('balance').value) || 0;
     var newfunds = parseFloat(document.getElementById('funds').value) || 0;
     var newatm = parseFloat(document.getElementById('atm').value) || 0;
-    var atmfees = Math.min(newatm*3, 12);
+    var atmfees = (Math.min(newatm*3, 12) * 12);
     var money = newbalance + newfunds;
     if (money < 10000) {
       var total = (money * 0.0149) + atmfees;
