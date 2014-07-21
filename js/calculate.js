@@ -8,7 +8,7 @@ $(function () {
   $('#balance-slide').slider({
     min: 0,
     max: 25000,
-    step: 25,
+    step: 50,
     value: 0,
     slide: function(event, ui) {
       $('#balance').val(ui.value);
@@ -18,7 +18,7 @@ $(function () {
   $('#funds-slide').slider({
     min: 0,
     max: 25000,
-    step: 25,
+    step: 50,
     value: 0,
     slide: function(event, ui) {
       $('#funds').val(ui.value);
