@@ -38,6 +38,22 @@
           			<h6>Merchant Services: (877) 995-9198</h6>
           		</div>
           	</div><!-- row -->
+          	<div class="row">
+          		<form id="ajax-contact" method="post" action="mailer.php">
+				    <div class="field">
+				        <label for="name">Name:</label>
+				        <input type="text" id="name" name="name" required>
+				    </div>
+
+				    <div class="field">
+				        <label for="message">Message:</label>
+				        <textarea id="message" name="message" required></textarea>
+				    </div>
+
+				    <div class="field">
+				        <button type="submit">Send</button>
+				    </div>
+				</form>
           </div>
         </main>
 
