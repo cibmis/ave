@@ -19,7 +19,7 @@
 
         <main role="main">
           <div class="container">
-            <p>The Page you tried to go to http://www.centralillinoisbank.com/index.php has been moved to <a href="http://www.centrailillinoisbank.com/index.html">http://www.centralillinoisbank.com/index.html</a>.  If you got to this page via a bookmarked link, please update your bookmarks.  Thank you.</p>
+            <p>The Page you tried to go to http://www.centralillinoisbank.com/index.php has been moved to <a href="http://www.centrailllinoisbank.com/index.html">http://www.centralillinoisbank.com/index.html</a>.  If you got to this page via a bookmarked link, please update your bookmarks.  Thank you.</p>
           
           </div>
         </main>
