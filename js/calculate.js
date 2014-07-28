@@ -42,7 +42,7 @@ $(function () {
     var newatm = parseFloat(document.getElementById('atm').value) || 0;
     var atmfees = (Math.min(newatm*3, 12) * 12);
     var money = newbalance + newfunds;
-    if (money < 10000) {
+    if (money <= 10000) {
       var total = (money * 0.0149) + atmfees;
       document.acceleration.total.value = total.toFixed(2);
     } else if ((money > 10000) && (money < 20000)) {
