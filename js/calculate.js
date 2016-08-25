@@ -47,13 +47,13 @@ $(function () {
       document.acceleration.total.value = total.toFixed(2);
     } else if ((money > 10000) && (money <= 20000)) {
       var checking = 10000 * 0.025;
-      var savings = (money -10000) * 0.005;
+      var savings = (money -10000) * 0.0005;
       var total2 = checking + savings + atmfees;
       document.acceleration.total.value = total2.toFixed(2);
     } else {
       var check = 10000 * 0.025;
-      var savings2 = 10000 * 0.005;
-      var over = (money - 20000) * 0.0025;
+      var savings2 = 10000 * 0.0005;
+      var over = (money - 20000) * 0.00025;
       var total3 = check + savings2 + over + atmfees;
       document.acceleration.total.value = total3.toFixed(2);
     }
